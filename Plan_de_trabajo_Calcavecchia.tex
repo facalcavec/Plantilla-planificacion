@@ -11,11 +11,11 @@
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{Felipe A. Calcavecchia} 
+\autor{Felipe Calcavecchia} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
-\director{Nombre del Director}
-\pertenenciaDirector{pertenencia} 
+\director{Alejandro Permingeat}
+\pertenenciaDirector{FIUBA} 
 % FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
 \codirector{} % si queda vacio no se deberíá incluir 
 \pertenenciaCoDirector{}
@@ -34,7 +34,7 @@
  
 \fechaINICIO{27 de junio de 2020}		%Fecha de inicio de la cursada de GdP \fechaInicioName
 \fechaFINALPlanificacion{22 de Agosto de 2020} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{5 de diciembre de 2020}		%Fecha de defensa pública del trabajo final
+\fechaFINALTrabajo{5 de Agosto de 2021}		%Fecha de defensa pública del trabajo final
 
 \usepackage{enumitem}
 
@@ -66,10 +66,11 @@
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 1.0      & Creación del documento                                                          & 27/06/2020 \\ \hline
 1.1      & Se completó Propósito, Alcance, Supuestos, Requerimientos, Entregables y Desglose del trabajo en taréas 																						   & 10/07/2020 \\ \hline
-%1.2      & Otro ejemplo \newline
+1.2      & Se Hacen correcciones y se avanza hasta el punto 11 % \newline
 %		   Con texto partido \newline
 %		   En varias líneas \newline
-%		   A propósito                                                                     %& dd/mm/aaaa \\ \hline
+%		   A propósito                                                                     
+& 23/07/2020 \\ \hline
 \end{tabularx}
 \end{table}
 
@@ -77,7 +78,7 @@ Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios 
 
 
 
-\section{Acta de Constitución del Proyecto}
+\section{Acta de constitución del proyecto}
 \label{sec:acta}
 
 \begin{flushright}
@@ -86,7 +87,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de una fuente utilizada como cargador y una placa de control que garantice la funcionalidad del mismo, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y {\$60.000}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de una fuente utilizada como cargador y una placa de control que garantice la funcionalidad del mismo, y tendrá un presupuesto preliminar estimado de 670 hs de trabajo y {\$845.619}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -109,13 +110,13 @@ Se adjunta a esta acta la planificación inicial.
 \section{Descripción técnica-conceptual del Proyecto a realizar}
 \label{sec:descripcion}
 
-Hoy en día las baterías de uso industrial constituyen una parte fundamental en sistemas de respaldo de alimentación, vehículos de tracción eléctrica y otros multiples usos. Su elevado costo respecto de los  dispositivos que alimentan, hacen que un buen uso y mantenimiento sea una cuestión a tener en cuenta a la hora de considerar su vida útil.
+Hoy en día las baterías de uso industrial constituyen una parte fundamental en sistemas de respaldo de alimentación, vehículos de tracción eléctrica y otros múltiples usos. Su elevado costo respecto de los  dispositivos que alimentan, hacen que un buen uso y mantenimiento sea una cuestión a tener en cuenta a la hora de considerar su vida útil.
 \\[3pt]
 Todo esto lleva a la necesidad de desarrollar un cargador que asegure una carga adecuada (en tensión y corriente), de acuerdo al tipo de batería, a su estado de carga y a las condiciones ambientales que la rodean.
 \\[3pt]
 Si tenemos en cuenta que el mercado local ofrece algunos cargadores nacionales, la mayoría se basan en tecnologías antiguas. Por el lado de los importados, tecnológicamente mas avanzados, necesitan certificaciones aduaneras que elevan su precio.
 \\[3pt]
-Si bien la empresa produce cargadores, estos son un complemento en la comercialización de baterías para automoviles. Con este proyecto se pretende aumentar la presencia de la companía en el segmento del mercado que corresponde a las baterías industriales expandiendo su modelo de negocio a otras áreas menos explotadas.\\ 
+Si bien la empresa produce cargadores, estos son un complemento en la comercialización de baterías para automóviles. Con este proyecto se pretende aumentar la presencia de la compañía en el segmento del mercado que corresponde a las baterías industriales expandiendo su modelo de negocio a otras áreas menos explotadas.\\ 
 En la Figura \ref{fig:modeloCanvas} se puede observar el modelo Canvas de negocio.
 
 \begin{figure}[h]
@@ -127,13 +128,13 @@ En la Figura \ref{fig:modeloCanvas} se puede observar el modelo Canvas de negoci
 
 El presente proyecto se destaca en tres aspectos que le agregan valor, dos enfocados en el consumidor final y uno en el cliente.
 \\[3pt]
-En lo pertinente al consumidor final, y desde el punto de vista del hardware, se descartan los voluminosos y pesados transformadores por fuentes conmutadas de alta frecuencia, mas eficaces, pequeñas y livianas.\\
+En lo pertinente al consumidor final, y desde el punto de vista del hardware, se reemplazan los voluminosos y pesados transformadores por fuentes conmutadas de alta frecuencia, mas eficaces, pequeñas y livianas.\\
 Desde el lado del firmware de control, este, permite adaptarse a cada tipo de banco de baterías en forma particular. Además como aspecto innovador, se incorpora un monitoreo de cada una de las cargas que realiza y con esa información genera un log que permite hacer un análisis periódico del estado de la batería y activar alarmas tempranas en caso de detectar alguna anomalía.
 \\[3pt]
 Por el lado del cliente, se beneficia al disminuir stock inmovilizado, teniendo un solo modelo de cargador modularizado y configurable, en vez de varios cargadores, uno por cada tipo de batería, simplificando su producción y ahorrando costos.
 
-En la Figura \ref{fig:diagBloques} se muestra el diagrama en bloques del proyecto a realizar. Se observa que el cargador posee una disposición modular en la que admite 1, 2 ó 3 fuentes. Cada una puede aportar hasta 40 Amperes. Esto posiblita configurar el cargador para adaptarse a los requerimientos de los distintos tipos de baterías, abarcando las tensiones standars más utilizadas (12V, 24V, 36V y 48V) y corrientes de carga que pueden ir desde 1A hasta 120A.\\[3pt]
-La placa que controla al cargador contiene un microprocesador capaz de suministrar tres señales PWM independientes  que manejan las tensiones de salidas de las tres fuentes, cinco canales ADC para leer sensores, un puerto con entradas/salidas digitales para el display, teclado, relés de alarma y otros accesorios como indicadores luminosos, ventiladores, etc, y por último una comunicacion serie para los modulos de WIFI y el reloj de tiempo real.\\[3pt]
+En la Figura \ref{fig:diagBloques} se muestra el diagrama en bloques del proyecto a realizar. Se observa que el cargador posee una disposición modular en la que admite 1, 2 ó 3 fuentes. Cada una puede aportar hasta 40 Amperes. Esto posiblita configurar el cargador para adaptarse a los requerimientos de los distintos tipos de baterías, abarcando las tensiones standards más utilizadas (12V, 24V, 36V y 48V) y corrientes de carga que pueden ir desde 1A hasta 120A.\\[3pt]
+La placa que controla al cargador contiene un microprocesador capaz de suministrar tres señales PWM independientes  que manejan las tensiones de salidas de las tres fuentes, cinco canales ADC para leer sensores, un puerto con entradas/salidas digitales para el display, teclado, relés de alarma y otros accesorios como indicadores luminosos, ventiladores, etc, y por último una comunicacion serie para los módulos de WIFI y el reloj de tiempo real.\\[3pt]
 El firmware controla, en forma secuencial, cuatro etapas de carga:
 
 %\vspace{5px}
@@ -149,9 +150,9 @@ El firmware controla, en forma secuencial, cuatro etapas de carga:
 
 \begin{enumerate}
 \item CARGA A FONDO: Suministra aproximadamente el 80\% de la carga total, se realiza a corriente constante y se registra el tiempo de duración.
-\item CARGA POR ABSORCION: Le entrega el 20\% restante de carga y se realiza a tensión constante. Dura aproximadamente el mismo tiempo que la carga a Fondo.
+\item CARGA POR ABSORCIÓN: Le entrega el 20\% restante de carga y se realiza a tensión constante. Dura aproximadamente el mismo tiempo que la carga a Fondo.
 \item CARGA A FLOTE: Cuando finaliza la carga, se fija una tensión y corriente máxima de forma que la batería pueda quedar conectada al cargador indefinidamente sin provocar sobrecargas.
-\item ECUALIZACIÓN: Cada un número determinado de cargas, se realiza este paso para emparejar los elementos que conforman la batería. Se hace forzando una sobrecarga durante un tiempo controlado relativamente corto.
+\item ECUALIZACIÓN: Cada un número determinado de cargas, se realiza este paso para equilibrar los elementos que conforman la batería. Se hace forzando una sobrecarga durante un tiempo controlado relativamente corto.
 \end{enumerate}
 
 Las corrientes de las fuentes son medidas y comparadas con las de referencia, generando una señal de error que se usa para actuar sobre los PWM’s formando un sistema de lazo cerrado que se controla por un algoritmo PID.
@@ -202,13 +203,13 @@ Usuario final & Empresas		  & \hspace{2cm}-	   & \hspace{1.8cm}-			\\
 \label{sec:proposito}
 
 \begin{consigna}{black}
-El propósito de este proyecto es diseñar e implementar un prototipo funcional de un cargador de baterías modular, aplicando los conocimiento que se van adquiriendo en el curso. A su vez que esos concimientos sirvan para ser incorporados como metodología de trabajo a futuros productos realizados en la empresa.
+El propósito de este proyecto es diseñar e implementar un prototipo funcional de un cargador de baterías modular, aplicando los conocimiento que se van adquiriendo en el curso. A su vez que esos conocimientos sirvan para ser incorporados como metodología de trabajo a futuros productos realizados en la empresa.
 \end{consigna}
 
 \section{2. Alcance del proyecto}
 \label{sec:alcance}
 
-Este proyecto incluirá el diseño y construcción de un prototipo funcional de un cargador de baterías que conste de un sistema embebido formado por una placa, que interactúe con sus perisféricos y controle las fuentes de carga. También  se incluirá toda la documentación y archivos necesarios para su producción, como su manual de uso e instalación.
+Este proyecto incluirá el diseño y construcción de un prototipo funcional de un cargador de baterías que conste de un sistema embebido formado por una placa, que interactúe con sus periféricos y controle las fuentes de carga. También  se incluirá toda la documentación y archivos necesarios para su producción, así como también su manual de uso e instalación.
 
 No queda incluido en el presente proyecto, el diseño y construcción de las fuentes, el diseño del gabinete y partes mecánicas. Tampoco incluye la implementación de una aplicación de software para la lectura remota del reporte de cargas. Solo se enviarán los datos crudos del log.
 
@@ -219,7 +220,7 @@ No queda incluido en el presente proyecto, el diseño y construcción de las fue
 Para el desarrollo del presente proyecto se supone que: 
 
 \begin{enumerate}
-\item Se disponerá de la información de marketing de los posibles usuarios para analizar las funcionalidades del proyecto.
+\item Se dispondrá de la información de marketing de los posibles usuarios para analizar las funcionalidades del proyecto.
 \item Se contará con los suficientes recursos económicos para la compra de todo el material necesario.
 \item Se supone que los componentes a utilizar se consiguen localmente o que se dispone de todos los requisitos necesarios para su importación en caso de ser necesario.
 \item Se supone que las fuentes a utilizar tienen el correspondiente certificado de seguridad eléctrica.
@@ -272,7 +273,7 @@ Los requerimientos del presente proyecto se establecieron luego de acordar con e
 						\item Carga a Flote.
 						\item Ecualización.
 					\end{enumerate}
-				\item Tendrá un algoritmo de parada de emergencia.
+				\item Tendrá un algoritmo que atienda al botón de parada de emergencia.
 				\item El control de carga se realizará por un algoritmo PID
 				\item Se registrará la fecha y hora de inicio y finalización de cada carga a través de un RTC.
 				\item Debe guardar las últimas mil cargas realizadas.
@@ -284,11 +285,11 @@ Los requerimientos del presente proyecto se establecieron luego de acordar con e
 	\begin{enumerate}[label*=\arabic*.]
 		\item Se deberá generar documentación:
 			\begin{enumerate}[label*=\arabic*.]
-				\item Esquematicos eléctricos.
+				\item Esquemáticos eléctricos.
 				\item Manual de instalación.
 				\item Manual de uso.
 			\end{enumerate}
-		\item Se contará con la correspondiente certificación eléctrica otorgada por un laboratorio habilitado.
+		\item Se contará con la correspondiente certificación eléctrica otorgada por un laboratorio habilitado para la importación de las fuentes de carga.
 		\item El grado de protección del sistema debe ser como mínimo IP50.
 		\item Se debe garantizar un servicio de post venta por al menos 5 años.
 	\end{enumerate}
@@ -314,9 +315,9 @@ Los requerimientos del presente proyecto se establecieron luego de acordar con e
 \label{sec:wbs}
 
 \begin{enumerate}
-	\item \textbf{Planificación del proyecto (20hs)}
+	\item \textbf{Planificación del proyecto (30hs)}
 	\begin{enumerate}[label*=\arabic*.]
-		\item Definición de requerimientos con el cliente (5hs)
+		\item Definición de requerimientos con el cliente (15hs)
 		\item Confección del plan de trabajo (15hs)
 	\end{enumerate}
 
@@ -325,18 +326,17 @@ Los requerimientos del presente proyecto se establecieron luego de acordar con e
 		\item Información sobre la competencia (5hs)
 		\item Análisis técnico-económico (10hs)
 		\item Análisis comparativo para determinar que microprocesador usar (10hs)	
-		\item Investigación sobre los perisféricos a utilizar (15hs)
+		\item Investigación sobre los periféricos a utilizar (15hs)
 		\item Estudio de los datasheet de los periféricos elegidos (25hs)   
 	\end{enumerate}
 
-	\item \textbf{Desarrollo del Hardware (140hs)}
+	\item \textbf{Desarrollo del Hardware (100hs)}
 	\begin{enumerate}[label*=\arabic*.]
 		\item Diseño del diagrama esquemático (30hs)
 		\item Diseño del diagrama de conexión (20hs)
 		\item Diseño de los PCB's preliminares (30hs)	
 		\item Armado de los PCB's  (10hs)
-		\item Ensamblado del prototipo inicial (10hs)
-		\item Pruebas y ensayos preliminares (40hs)   
+		\item Ensamblado del prototipo inicial (10hs)   
 	\end{enumerate}
 	
 	\item \textbf{Desarrollo del Firmware (250hs)}
@@ -350,18 +350,18 @@ Los requerimientos del presente proyecto se establecieron luego de acordar con e
 				\item Módulo de configuración (40hs)
 				\item Módulo de adquisición de datos (25hs)
 				\item Módulo PID de control (20hs)	
-				\item Módulo de comunicación con perisféricos (30hs)
+				\item Módulo de comunicación con periféricos (30hs)
 				\item Módulo para guardar los registros  (20hs)
 				\item Módulo de diagnóstico y alarmas (35hs)   
 			\end{enumerate}	  
 	\end{enumerate}
 	
-	\item \textbf{Vereficación y validación (90hs)}
+	\item \textbf{Vereficación y validación (130hs)}
 	\begin{enumerate}[label*=\arabic*.]
-		\item Integración del sistema (20hs)
+		\item Integración del sistema (40hs)
 		\item Pruebas de campo (40hs)
 		\item Correcciones de los PCB's (10hs)	
-		\item Busqueda de posibles bugs  (10hs)
+		\item Búsqueda de posibles bugs  (30hs)
 		\item Ensamblado final del prototipo (10hs)  
 	\end{enumerate}	
 	
@@ -373,78 +373,90 @@ Los requerimientos del presente proyecto se establecieron luego de acordar con e
 	\end{enumerate}		
 \end{enumerate}
 
-\textbf{Cantidad total de horas: (660 hs)}
+\textbf{Cantidad total de horas: (670 hs)}
 
 
 \section{7. Diagrama de Activity On Node}
 \label{sec:AoN}
 
-\begin{consigna}{red}
-Armar el AoN a partir del WBS definido en la etapa anterior. 
+%\begin{consigna}{red}
+%Armar el AoN a partir del WBS definido en la etapa anterior. 
 
 %La figura \ref{fig:AoN} fue elaborada con el paquete latex tikz y pueden consultar la siguiente referencia \textit{online}:
 
 %\url{https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_3)\%E2\%80\%94Creating_Flowcharts}
 
-\end{consigna}
+%\end{consigna}
 
 \begin{figure}[htpb]
 \centering 
-\includegraphics[width=.8\textwidth]{./Figuras/AoN.png}
+\includegraphics[width=1\textwidth]{./Figuras/AoN_Cargador.png}
 \caption{Diagrama en \textit{Activity on Node}}
 \label{fig:AoN}
 \end{figure}
 
-Indicar claramente en qué unidades están expresados los tiempos.
-De ser necesario indicar los caminos semicríticos y analizar sus tiempos mediante un cuadro.
-Es recomendable usar colores y un cuadro indicativo describiendo qué representa cada color, como se muestra en el siguiente ejemplo:
+%Indicar claramente en qué unidades están expresados los tiempos.
+%De ser necesario indicar los caminos semicríticos y analizar sus tiempos mediante un cuadro.
+%Es recomendable usar colores y un cuadro indicativo describiendo qué representa cada color, como se muestra en el siguiente ejemplo:
 
 
 
 \section{8. Diagrama de Gantt}
 \label{sec:gantt}
 
-\begin{consigna}{red}
-Utilizar el software Gantter for Google Drive o alguno similar para dibujar el diagrama de Gantt.
-
-Existen muchos programas y recursos \textit{online} para hacer diagramas de gantt, entre las cuales destacamos:
-
-\begin{itemize}
-\item Planner
-\item GanttProject
-\item Trello + \textit{plugins}. En el siguiente link hay un tutorial oficial: \\ \url{https://blog.trello.com/es/diagrama-de-gantt-de-un-proyecto}
-\item Creately, herramienta online colaborativa. \\\url{https://creately.com/diagram/example/ieb3p3ml/LaTeX}
-\item Se puede hacer en latex con el paquete \textit{pgfgantt}\\ \url{http://ctan.dcc.uchile.cl/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf}
-\end{itemize}
-
-Pegar acá una captura de pantalla del diagrama de Gantt, cuidando que la letra sea suficientemente grande como para ser legible. 
-Si el diagrama queda demasiado ancho, se puede pegar primero la ``tabla'' del Gantt y luego pegar la parte del diagrama de barras del diagrama de Gantt.
-
-Configurar el software para que en la parte de la tabla muestre los códigos del EDT (WBS).\\
-Configurar el software para que al lado de cada barra muestre el nombre de cada tarea.\\
-Revisar que la fecha de finalización coincida con lo indicado en el Acta Constitutiva.
-
-En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de gantt realizado con el paquete de \textit{pgfgantt}. En la plantilla pueden ver el código que lo genera y usarlo de base para construir el propio.
-
-\begin{figure}[htbp]
-\begin{center}
-\begin{ganttchart}{1}{12}
-  \gantttitle{2020}{12} \\
-  \gantttitlelist{1,...,12}{1} \\
-  \ganttgroup{Group 1}{1}{7} \\
-  \ganttbar{Task 1}{1}{2} \\
-  \ganttlinkedbar{Task 2}{3}{7} \ganttnewline
-  \ganttmilestone{Milestone o hito}{7} \ganttnewline
-  \ganttbar{Final Task}{8}{12}
-  \ganttlink{elem2}{elem3}
-  \ganttlink{elem3}{elem4}
-\end{ganttchart}
-\end{center}
-\caption{Diagrama de gantt de ejemplo}
-\label{fig:gantt}
+\begin{figure}[H]
+\centering 
+\includegraphics[width=1\textwidth]{./Figuras/Gantt_tabla.png}
+\caption{Tabla de tareas}
+\label{fig:Tabla Gantt}
 \end{figure}
 
-\end{consigna}
+\begin{figure}[H]
+\centering 
+\includegraphics[angle=90, width=1\textwidth]{./Figuras/Gantt_diag.png}
+%\includegraphics[angle=90]{./Figuras/Gantt_diag.png}
+\caption{Diagrama de \textit{Gantt}}
+\label{fig:Diagrama Gantt}
+\end{figure}
+
+%\begin{consigna}{red}
+%Utilizar el software Gantter for Google Drive o alguno similar para dibujar el diagrama de Gantt.
+
+%Existen muchos programas y recursos \textit{online} para hacer diagramas de gantt, entre las cuales destacamos:
+
+%\begin{itemize}
+%\item Planner
+%\item GanttProject
+%\item Trello + \textit{plugins}. En el siguiente link hay un tutorial oficial: \\ \url{https://blog.trello.com/es/diagrama-de-gantt-de-un-proyecto}
+%\item Creately, herramienta online colaborativa. \\\url{https://creately.com/diagram/example/ieb3p3ml/LaTeX}
+%\item Se puede hacer en latex con el paquete \textit{pgfgantt}\\ \url{http://ctan.dcc.uchile.cl/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf}
+%\end{itemize}
+
+%Pegar acá una captura de pantalla del diagrama de Gantt, cuidando que la letra sea suficientemente grande como para ser legible. 
+%Si el diagrama queda demasiado ancho, se puede pegar primero la ``tabla'' del Gantt y luego pegar la parte del diagrama de barras del diagrama de Gantt.
+
+%Configurar el software para que en la parte de la tabla muestre los códigos del EDT (WBS).\\
+%Configurar el software para que al lado de cada barra muestre el nombre de cada tarea.\\
+%Revisar que la fecha de finalización coincida con lo indicado en el Acta Constitutiva.
+
+%En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de gantt realizado con el paquete de \textit{pgfgantt}. En la plantilla pueden ver el código que lo genera y usarlo de base para construir el propio.
+
+%\begin{figure}[htbp]
+%\begin{center}
+%  \gantttitle{2020}{12} \\
+%  \gantttitlelist{1,...,12}{1} \\
+%  \ganttbar{Task 1}{1}{2} \\
+%  \ganttlinkedbar{Task 2}{3}{7} \ganttnewline
+%  \ganttmilestone{Milestone o hito}{7} \ganttnewline
+%  \ganttbar{Final Task}{8}{12}
+%  \ganttlink{elem3}{elem4}
+%\end{ganttchart}
+%\end{center}
+%\caption{Diagrama de gantt de ejemplo}
+%\label{fig:gantt}
+%\end{figure}
+
+%\end{consigna}
 
 \section{9. Matriz de uso de recursos de materiales}
 \label{sec:recursos}
@@ -453,120 +465,294 @@ En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de gantt realiza
 \begin{table}[htpb]
 \label{tab:recursos}
 \centering
-\begin{tabularx}{\linewidth}{@{}|c|X|X|X|X|X|@{}}
+\begin{tabularx}{\linewidth}{@{}|c|l|X|X|X|X|@{}}
 \hline
+
 \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \multicolumn{4}{c|}{\cellcolor[HTML]{C0C0C0}Recursos requeridos (horas)} \\ \cline{3-6} 
-\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Código\\ WBS\end{tabular}} & \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Nombre \\ tarea\end{tabular}} & Material 1 & Material 2 & Material 3 & Material 4 \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
-\end{tabularx}%
+
+%\cellcolor[HTML]{C0C0C0}WBS & \cellcolor[HTML]{C0C0C0}Tarea &  PC  & Placa PCB & Prototipo & Laboratorio \\ \hline
+
+
+
+\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Código\\ WBS\end{tabular}} & 
+\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\makebox[4.5cm][c]{Nombre de la tarea}} & 
+\multicolumn{1}{|c|}{PC}  &\multicolumn{1}{|c|}{Placa PCB} &\multicolumn{1}{|c|}{Prototipo} &\multicolumn{1}{|c|}{Laboratorio} \\ \hline
+  
+
+ \rowcolor[HTML]{000000} 
+ \textcolor{white}{1.} &
+ \multicolumn{5}{|l|}{\textcolor{white}{Planificación del proyecto}}\\ \cline{1-6}
+ 
+ 1.1. &Definición requerimientos &\multicolumn{1}{|c|}{15 hs}  &  &  &  \\ \hline
+ 1.2. &Plan de trabajo &\multicolumn{1}{|c|}{15 hs} &  &  &  \\ \hline
+
+ \rowcolor[HTML]{FF0000}
+ 2. & 	
+ \multicolumn{5}{|l|}{Investigación preliminar} \\ \cline{1-6}
+ 
+ 2.1. &Info de la competencia  &\multicolumn{1}{|c|}{5 hs} &  &  &  \\ \hline
+ 2.2. &A. técnico-económico  &\multicolumn{1}{|c|}{10 hs} &  &  &  \\ \hline
+ 2.3. &Determinar microprocesador  &\multicolumn{1}{|c|}{10 hs} &  &  &  \\ \hline
+ 2.4. &Determinar periféricos  &\multicolumn{1}{|c|}{15 hs} &  &  &  \\ \hline
+ 2.5. &Estudio datasheet  &\multicolumn{1}{|c|}{25 hs} &  &  &  \\ \hline
+ 
+ \rowcolor[HTML]{00D8FF}
+ 3. &
+ \multicolumn{5}{|l|}{Desarrollo del hardware}	\\ \cline{1-6}
+ 
+ 3.1. &Diseño Esquemático &\multicolumn{1}{|c|}{30 hs} &  &  &  \\ \hline
+ 3.2. &Diseño diagrama conexión &\multicolumn{1}{|c|}{20 hs} &  &  &  \\ \hline
+ 3.3. &Diseño PCB  &\multicolumn{1}{|c|}{30 hs} &  &  &  \\ \hline
+ 3.4. &Armado PCB  &  &  &  &\multicolumn{1}{|c|}{10 hs}  \\ \hline
+ 3.5. &Ensamblado del prototipo  &  &  &  &\multicolumn{1}{|c|}{10 hs} \\ \hline
+ 
+ \rowcolor[HTML]{FFD200}
+ 4. &
+ \multicolumn{5}{|l|}{Desarrollo del firmware}\\ \cline{1-6}
+ 
+ 4.1. &Funciones del firmware  &\multicolumn{1}{|c|}{30 hs} &  &  &  \\ \hline
+ 4.2. &Modularización del código &\multicolumn{1}{|c|}{185 hs} &\multicolumn{1}{|c|}{30 hs}  &  &\multicolumn{1}{|c|}{5 hs}  \\ \hline
+ 
+ \rowcolor[HTML]{00FF00}
+ 5. &
+ \multicolumn{5}{|l|}{Verificación y validación}\\ \cline{1-6}
+ 
+ 5.1. &Integración del sistema  &\multicolumn{1}{|c|}{5 hs} &\multicolumn{1}{|c|}{10hs}  &\multicolumn{1}{|c|}{20 hs}  &\multicolumn{1}{|c|}{5 hs} \\ \hline
+ 5.2. &Prueba de campo  &  &  &  &\multicolumn{1}{|c|}{40 hs}  \\ \hline
+ 5.3. &Corrección PCB  &\multicolumn{1}{|c|}{5 hs} &\multicolumn{1}{|c|}{5 hs} &  &  \\ \hline
+ 5.4. &Búsqueda de bugs  &\multicolumn{1}{|c|}{20 hs} &\multicolumn{1}{|c|}{10 hs} &  &  \\ \hline
+ 5.5. &Ensamble final  &  &  &\multicolumn{1}{|c|}{10 hs} &  \\ \hline
+ 
+ \rowcolor[HTML]{800080}
+ \textcolor{white}{6. } &
+ \multicolumn{5}{|l|}{\textcolor{white}{Proceso de cierre }}	\\ \cline{1-6} 
+ 
+ 6.1. &Documentación y manuales  &\multicolumn{1}{|c|}{20 hs} &  &  &  \\ \hline
+ 6.2. &Memoria técnica  &\multicolumn{1}{|c|}{60 hs} &  &  &  \\ \hline
+ 6.3. &Presentación final  &\multicolumn{1}{|c|}{15 hs} &  &  &  \\ \hline    
+
+ \rowcolor[HTML]{C0C0C0}
+ \multicolumn{2}{|c|}{\textbf{Totales }} &\multicolumn{1}{|c|}{\textbf{515 hs}}	&\multicolumn{1}{|c|}{\textbf{55 hs}}	&\multicolumn{1}{|c|}{\textbf{30 hs}}	&\multicolumn{1}{|c|}{\textbf{70 hs}}	\\ \cline{1-6}
+
+\end{tabularx}
 \end{table}
+
+\begin{itemize}
+ \item PC: Computadora con las aplicaciones necesarias para el diseño del hardware y firmware.
+ \item Placa PCB: placa de circuito impreso funcional con microprocesador y periféricos.
+ \item Prototipo: Placa de control integrada al hardware del cargador
+ \item Laboratorio: Espacio físico con instrumental de medición.
+\end{itemize}
 
 
 \section{10. Presupuesto detallado del proyecto}
 \label{sec:presupuesto}
 
-\begin{consigna}{red}
-Si el proyecto es complejo entonces separarlo en partes:
-\begin{itemize}
-\item Un total global, indicando el subtotal acumulado por cada una de las áreas.
-\item El desglose detallado del subtotal de cada una de las áreas.
-\end{itemize}
+%\begin{consigna}{red}
+%Si el proyecto es complejo entonces separarlo en partes:
+%\begin{itemize}
+%\item Un total global, indicando el subtotal acumulado por cada una de las áreas.
+%\item El desglose detallado del subtotal de cada una de las áreas.
+%\end{itemize}
 
-IMPORTANTE: No olvidarse de considerar los COSTOS INDIRECTOS.
+%IMPORTANTE: No olvidarse de considerar los COSTOS INDIRECTOS.
 
-\end{consigna}
+%\end{consigna}
 
-\begin{table}[htpb]
+\begin{table}[H]
 \centering
 \begin{tabularx}{\linewidth}{@{}|X|c|r|r|@{}}
 \hline
 \rowcolor[HTML]{C0C0C0} 
-\multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS DIRECTOS} \\ \hline
+\multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}\textbf{COSTOS DIRECTOS}} \\ \hline
 \rowcolor[HTML]{C0C0C0} 
 Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
- &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} \\ \hline
- &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{3}{|c|}{SUBTOTAL} &
-  \multicolumn{1}{c|}{} \\ \hline
-\rowcolor[HTML]{C0C0C0} 
-\multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS INDIRECTOS} \\ \hline
-\rowcolor[HTML]{C0C0C0} 
-Descripción &
+ 
+ Fuentes de carga &
+  \multicolumn{1}{c|}{3} &
+  \multicolumn{1}{r|}{\$ 26.950} &
+  \multicolumn{1}{r|}{\$ 80.850} \\ \hline
+ 
+ PCB &
+  \multicolumn{1}{c|}{2} &
+  \multicolumn{1}{r|}{\$ 4.620} &
+  \multicolumn{1}{r|}{\$ 9.240} \\ \hline
+ 
+ Sensor de corriente &
+  \multicolumn{1}{c|}{3} &
+  \multicolumn{1}{r|}{\$ 924} &
+  \multicolumn{1}{r|}{\$ 2.772} \\ \hline
+  
+ Sensor de tenperatura &
+  \multicolumn{1}{c|}{2} &
+  \multicolumn{1}{r|}{\$ 153} &
+  \multicolumn{1}{r|}{\$ 306} \\ \hline 
+  
+ Pantalla LCD &
+  \multicolumn{1}{c|}{2} &
+  \multicolumn{1}{r|}{\$ 1.155} &
+  \multicolumn{1}{r|}{\$ 2.310} \\ \hline
+  
+ Placa de evaluación &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{r|}{\$ 2.541} &
+  \multicolumn{1}{r|}{\$ 2.541} \\ \hline 
+  
+ Módulo WIFI &
+  \multicolumn{1}{c|}{2} &
+  \multicolumn{1}{r|}{\$ 800} &
+  \multicolumn{1}{r|}{\$ 800} \\ \hline 
+  
+ Componentes electrónicos varios (*) &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{r|}{\$ 3.000} &
+  \multicolumn{1}{r|}{\$ 3.000} \\ \hline
+  
+ Electricidad y conexionado (*)&
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{r|}{\$ 2.500} &
+  \multicolumn{1}{r|}{\$ 2.500} \\ \hline
+ 
+ Honorario profecional &
+  \multicolumn{1}{c|}{670 hs} &
+  \multicolumn{1}{r|}{\$ 750} &
+  \multicolumn{1}{r|}{\$ 502.500} \\ \hline
+  
+%\multicolumn{1}{|l|}{} & & & \\ \hline
+
+%\multicolumn{1}{|l|}{} & & & \\ \hline 
+      
+  \multicolumn{3}{|l|}{SUBTOTAL} &
+  \multicolumn{1}{r|}{\$ 605.969} \\ \hline
+  
+  \rowcolor[HTML]{C0C0C0} 
+  \multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}\textbf{COSTOS INDIRECTOS}} \\ \hline
+  \rowcolor[HTML]{C0C0C0} 
+  Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{3}{|c|}{SUBTOTAL} &
-  \multicolumn{1}{c|}{} \\ \hline
-\rowcolor[HTML]{C0C0C0}
-\multicolumn{3}{|c|}{TOTAL} &
-   \\ \hline
-\end{tabularx}%
+
+  \multicolumn{1}{|l|}{Servicios y alquileres} & 10
+  & \$ 7.500
+  & \$ 75.000
+  \\ \hline
+
+  \multicolumn{1}{|l|}{Baterías para pruebas de campo} & 4
+  & \$ 19.000
+  & \$ 76.000
+  \\ \hline
+   
+  \multicolumn{1}{|l|}{Gastos de aduana e importación} & 1
+  & \$ 34.650
+  & \$ 34.650 \\ \hline
+   
+  \multicolumn{1}{|l|}{Certificaciones para la importación} & 1
+  & \$ 54.000
+  & \$ 54.000 \\ \hline    
+   
+  \multicolumn{3}{|l|}{SUBTOTAL} &
+  \multicolumn{1}{r|}{\$ 239.650} \\ \hline
+  \rowcolor[HTML]{C0C0C0}
+  \multicolumn{3}{|r|}{\textbf{TOTAL}} & \textbf{\$ 845.619}
+  \\ \hline
+  
+ \end{tabularx}
 \end{table}
 
+(*) Valores aproximados
+
+%\pagebreak
 
 \section{11. Matriz de asignación de responsabilidades}
 \label{sec:responsabilidades}
-\begin{consigna}{red}
-Establecer la matriz de asignación de responsabilidades y el manejo de la autoridad completando la siguiente tabla:
+%\begin{consigna}{red}
+%Establecer la matriz de asignación de responsabilidades y el manejo de la autoridad completando la siguiente tabla:
 
-\begin{table}[htpb]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline
-\rowcolor[HTML]{C0C0C0} 
-\cellcolor[HTML]{C0C0C0} &
-  \cellcolor[HTML]{C0C0C0} &
-  \multicolumn{4}{c|}{\cellcolor[HTML]{C0C0C0}Listar todos los nombres y roles del proyecto} \\ \cline{3-6} 
-\rowcolor[HTML]{C0C0C0} 
-\cellcolor[HTML]{C0C0C0} &
-  \cellcolor[HTML]{C0C0C0} &
+
+
+\begin{table}[H]
+ \centering
+ \resizebox{\textwidth}{!}{
+ \begin{tabular}{|c|l|c|c|c|c|}
+  \hline
+  \rowcolor[HTML]{C0C0C0} 
+  &
+  &
+  \multicolumn{4}{|c|}{Nombres y roles del proyecto} \\  \cline{3-6}
+  
+  \rowcolor[HTML]{C0C0C0} 
+  &
+  &
   Responsable &
   Orientador &
   Equipo &
-  Cliente \\ \cline{3-6} 
+  Cliente \\ \cline{3-6}
+   
 \rowcolor[HTML]{C0C0C0} 
 \multirow{-3}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Código\\ WBS\end{tabular}} &
-  \multirow{-3}{*}{\cellcolor[HTML]{C0C0C0}Nombre de la tarea} &
+  \multirow{-3}{*}{\cellcolor[HTML]{C0C0C0}\makebox[4.5cm][c]{Nombre de la tarea}} &
   \authorname &
   \supname &
-  Nombre de alguien &
+  Luca Calcavecchia &
   \clientename \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
+
+\rowcolor[HTML]{000000} 
+ \textcolor{white}{1.} &
+ \multicolumn{5}{|l|}{\textcolor{white}{Planificación del proyecto}}\\ \cline{1-6}
+ 
+ 1.1. &Definición requerimientos & P  & I & S & P / A \\ \hline
+ 1.2. &Plan de trabajo & P & C / A & S & I \\ \hline
+
+ \rowcolor[HTML]{FF0000}
+ 2. & 	
+ \multicolumn{5}{|l|}{Investigación preliminar} \\ \cline{1-6}
+ 
+ 2.1. &Info de la competencia  & P  & - & S & C \\ \hline
+ 2.2. &A. técnico-económico  & S & - & - & P  \\ \hline
+ 2.3. &Determinar microprocesador  & P & A & - & I \\ \hline
+ 2.4. &Determinar periféricos  & P / A & C & - & - \\ \hline
+ 2.5. &Estudio datasheet  & P & - & - & - \\ \hline
+ 
+ \rowcolor[HTML]{00D8FF}
+ 3. &
+ \multicolumn{5}{|l|}{Desarrollo del hardware}	\\ \cline{1-6}
+ 
+ 3.1. &Diseño Esquemático & P & S & - & - \\ \hline
+ 3.2. &Diseño diagrama conexión & P & - & C & - \\ \hline
+ 3.3. &Diseño PCB  & P / A & C & S & I \\ \hline
+ 3.4. &Armado PCB  & P & I & - & I  \\ \hline
+ 3.5. &Ensamblado del prototipo & P & I & S & I \\ \hline
+ 
+ \rowcolor[HTML]{FFD200}
+ 4. &
+ \multicolumn{5}{|l|}{Desarrollo del firmware}\\ \cline{1-6}
+ 
+ 4.1. &Funciones del firmware  & P & C & - & - \\ \hline
+ 4.2. &Modularización del código & P & C / A  & - & - \\ \hline
+ 
+ \rowcolor[HTML]{00FF00}
+ 5. &
+ \multicolumn{5}{|l|}{Verificación y validación}\\ \cline{1-6}
+ 
+ 5.1. &Integración del sistema  & P & A  & S  & I \\ \hline
+ 5.2. &Prueba de campo  & P & I & S & A  \\ \hline
+ 5.3. &Corrección PCB  & P / A & I & - & - \\ \hline
+ 5.4. &Búsqueda de bugs  & P & C & - & - \\ \hline
+ 5.5. &Ensamble final  & P & I & P & A \\ \hline
+ 
+ \rowcolor[HTML]{800080}
+ \textcolor{white}{6. } &
+ \multicolumn{5}{|l|}{\textcolor{white}{Proceso de cierre }}	\\ \cline{1-6} 
+ 
+ 6.1. &Documentación y manuales  & P & C & S & A \\ \hline
+ 6.2. &Memoria técnica  & P & A & - & I \\ \hline
+ 6.3. &Presentación final  & P & A & - & I \\ \hline    
+
+
 \end{tabular}%
 }
 \end{table}
@@ -582,12 +768,12 @@ Referencias:
 \end{itemize}
 } %footnotesize
 
-Una de las columnas debe ser para el Director, ya que se supone que participará en el proyecto.
-A su vez se debe cuidar que no queden muchas tareas seguidas sin ``A'' o ``I''.
+%Una de las columnas debe ser para el Director, ya que se supone que participará en el proyecto.
+%A su vez se debe cuidar que no queden muchas tareas seguidas sin ``A'' o ``I''.
 
-Importante: es redundante poner ``I/A'' o ``I/C'', porque para aprobarlo o responder consultas primero la persona debe ser informada.
+%Importante: es redundante poner ``I/A'' o ``I/C'', porque para aprobarlo o responder consultas primero la persona debe ser informada.
 
-\end{consigna}
+%\end{consigna}
 
 \section{12. Gestión de riesgos}
 \label{sec:riesgos}
