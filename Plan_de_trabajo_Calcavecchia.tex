@@ -64,13 +64,19 @@
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
-1.0      & Creación del documento                                                          & 27/06/2020 \\ \hline
-1.1      & Se completó Propósito, Alcance, Supuestos, Requerimientos, Entregables y Desglose del trabajo en taréas 																						   & 10/07/2020 \\ \hline
-1.2      & Se Hacen correcciones y se avanza hasta el punto 11 % \newline
+
+1.0      & Creación del documento          					& 27/06/2020 \\ \hline
+
+1.1      & Se completó Propósito, Alcance, Supuestos, Requerimientos, Entregables y Desglose del trabajo en taréas 								& 10/07/2020 \\ \hline
+
+1.2      & Se Hacen correcciones y se avanza hasta el punto 11 & 23/07/2020 \\ \hline
+
+1.3      & Se avanza hasta el punto 17						 & 7/08/2020 \\ \hline
+
 %		   Con texto partido \newline
 %		   En varias líneas \newline
 %		   A propósito                                                                     
-& 23/07/2020 \\ \hline
+
 \end{tabularx}
 \end{table}
 
@@ -107,7 +113,7 @@ Se adjunta a esta acta la planificación inicial.
 
 
 
-\section{Descripción técnica-conceptual del Proyecto a realizar}
+\section{Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
 
 Hoy en día las baterías de uso industrial constituyen una parte fundamental en sistemas de respaldo de alimentación, vehículos de tracción eléctrica y otros múltiples usos. Su elevado costo respecto de los  dispositivos que alimentan, hacen que un buen uso y mantenimiento sea una cuestión a tener en cuenta a la hora de considerar su vida útil.
@@ -244,7 +250,7 @@ Los requerimientos del presente proyecto se establecieron luego de acordar con e
 		\item Fecha de entrega del proyecto terminado: 5 de Julio de 2021
 		\item El responsable asegura al cliente el know-how del proyecto.
 		\item Podrá alimentarse con línea de red monofásica o trifásica.
-		\item Deberá contemplar protecciones de alimentación atraves de llaves térmicas. 
+		\item Deberá contemplar protecciones de alimentación a través de llaves térmicas. 
 	\end{enumerate}
 
 	\item \textbf{Requerimientos funcionales}
@@ -295,6 +301,12 @@ Los requerimientos del presente proyecto se establecieron luego de acordar con e
 	\end{enumerate}
 \end{enumerate}
 
+\section{Historias de usuarios (\textit{Product backlog})}
+\label{sec:backlog}
+
+\begin{consigna}{red}
+Descripción: En esta sección se deben incluir las historias de usuarios y su ponderación (\textit{history points}). Recordar que las historias de usuarios son descripciones cortas y simples de una característica contada desde la perspectiva de la persona que desea la nueva capacidad, generalmente un usuario o cliente del sistema. La ponderación es un número entero que representa el tamaño de la historia comparada con otras historias de similar tipo.
+\end{consigna}
 
 \section{5. Entregables principales del proyecto}
 \label{sec:entregables}
@@ -768,6 +780,8 @@ Referencias:
 \end{itemize}
 } %footnotesize
 
+\vspace{20px}
+
 %Una de las columnas debe ser para el Director, ya que se supone que participará en el proyecto.
 %A su vez se debe cuidar que no queden muchas tareas seguidas sin ``A'' o ``I''.
 
@@ -778,31 +792,97 @@ Referencias:
 \section{12. Gestión de riesgos}
 \label{sec:riesgos}
 
-\begin{consigna}{red}
-a) Identificación de los riesgos (al menos cinco) y estimación de sus consecuencias:
- 
-Riesgo 1: detallar el riesgo (riesgo es algo que si ocurre altera los planes previstos)
-\begin{itemize}
-\item Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).\\
-Justificar el motivo por el cual se asigna determinado número de severidad (S).
-\item Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).\\
-Justificar el motivo por el cual se asigna determinado número de (O). 
-\end{itemize}   
-
-Riesgo 2:
-\begin{itemize}
-\item Severidad (S): 
-\item Ocurrencia (O):
-\end{itemize}
-
-Riesgo 3:
-\begin{itemize}
-\item Severidad (S): 
-\item Ocurrencia (O):
-\end{itemize}
+A continuación se detallan cinco posibles riesgos inherentes al proyecto. Los mismos son evaluados según su grado de severidad y su probabilidad de ocurrencia tomando valores de 1 a 10. 
 
 
-b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
+\vspace{0.5cm}
+
+
+\begin{table}[H]
+\centering
+
+\begin{tabularx}{\linewidth}{@{}|l|c|X|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Riesgo 1: Retrasos en las tareas realizadas por el equipo}}  \\ \hline
+Severidad  & 9 & No cumplir lo acordado con el cliente. Se disminuye el TIR (tasa interna de retorno). Se pierden posibles ventas. \\ \hline
+Ocurrencia & 5 & No se planificó correctamente los tiempos. La curva de aprendizaje se retrasa. Mala coordinación del equipo de trabajo. \\ \hline
+
+\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
+
+\begin{table}[H]
+\centering
+
+\begin{tabularx}{\linewidth}{@{}|l|c|X|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Riesgo 2: Demora en la entrega de insumos}}  \\ \hline
+Severidad  & 7 & Desabastecimiento del mercado electrónico local. Demoras aduaneras en la importación.  \\ \hline
+Ocurrencia & 8 & Es muy común con los proveedores locales. Modificaciones de las regulaciones aduaneras. \\ \hline
+
+\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
+
+\begin{table}[H]
+\centering
+
+\begin{tabularx}{\linewidth}{@{}|l|c|X|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Riesgo 3: Pérdida de información}}  \\ \hline
+Severidad  & 7 & Por desperfectos  de la PC de desarrollo. Robo \\ \hline
+Ocurrencia & 3 & Es poco probable si se usa un sistema de control de versiones y/o backup en la nube según sea el caso. \\ \hline
+
+\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
+
+\begin{table}[H]
+\centering
+
+\begin{tabularx}{\linewidth}{@{}|l|c|X|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Riesgo 4: Rotura del prototipo}}  \\ \hline
+Severidad  & 9 & Roturas por accidentes en la manipulación. Mal armado. Errores de conexión. Deficiencias en el diseño.  \\ \hline
+Ocurrencia & 4 & Si no se usan instalaciones de pruebas adecuadas. Apuros por terminar rápido una tarea. No se dio la suficiente importancia al diseño del hardward.
+ \\ \hline
+
+\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
+
+\begin{table}[H]
+\centering
+
+\begin{tabularx}{\linewidth}{@{}|l|c|X|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Riesgo 5: Selección del procesador y/o periféricos}}  \\ \hline
+Severidad  & 4 & Las características no alcanzan para cumplir el objetivo, como ser poca capacidad de memoria, pocos GPIO o baja resolución del ADC.  \\ \hline
+Ocurrencia & 5 & No poseer suficiente experiencia en este tipo de tecnología. La respuesta de los distintos sensores no es la esperada. 
+ \\ \hline
+
+\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
+
+Estos riesgos se ponderan de acuerdo a la siguiente fórmula:
+
+\begin{center}
+RPN = S * O
+\end{center}
+
+
+A continuacion se muestra una tabla de gestión de riesgos:      
 
 \begin{table}[htpb]
 \centering
@@ -810,64 +890,297 @@ b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
+ 1: Retrasos en las tareas realizadas por el equipo     & 9  & 5  & \textcolor{red}{ 45 }    & 9   & 2   & 18     \\ \hline
+ 2: Demora en la entrega de insumos     & 7  & 8  &\textcolor{red}{ 56 } & 3   & 8   & 24     \\ \hline
+ 3: Pérdida de información     & 7  & 3  & 21    &     &     &      \\ \hline
+ 4: Rotura del prototipo     & 9  & 4  &\textcolor{red}{ 36 }   & 5   & 3 & 15    \\ \hline
+ 5: Selección del procesador y/o periféricos     & 4  & 5  & 20    &     &     &      \\ \hline
+
 \end{tabularx}%
 \end{table}
 
 Criterio adoptado: 
-Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a ....
+Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a 30
 
 Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
 
-c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
- 
-Riesgo 1: Plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-  Nueva asignación de S y O, con su respectiva justificación:
-  - Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de severidad (S).
-  - Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de (O).
+Como se observa en la tabla vemos que tres de los cinco riesgos no cumplen el criterio. 
+A continuación analizaremos como mitigar los riesgos con RPN mayor a 30.
 
-Riesgo 2: Plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
- 
-Riesgo 3: Plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación)
+\begin{table}[H]
+\centering
 
-\end{consigna}
+\begin{tabularx}{\linewidth}{@{}|l|c|X|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Riesgo 1: Retrasos en las tareas realizadas por el equipo}}  \\ \hline
+Severidad  & 9 & La severidad sigue siendo la misma que antes de la mitigación. \\ \hline
+Ocurrencia & 2 & Se puede reordenar la distribución de horas de trabajo. Se pide asesoramiento al director del proyecto para los temas que generan mayores dudas. Para mejorar la relacion con el equipo se pueden implementar conceptos aprendidos en metodologías ágiles y scrum. \\ \hline
 
+\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
+
+\begin{table}[H]
+\centering
+
+\begin{tabularx}{\linewidth}{@{}|l|c|X|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Riesgo 2: Demora en la entrega de insumos}}  \\ \hline
+Severidad  & 3 & Se puede bajar la severidad, generando las compras con mayor antelación. Gestionar las importaciones con los proveedores locales. Dentro de lo posible adaptarse a los insumos que se consiguen en el mercado local \\ \hline
+Ocurrencia & 8 & La ocurrencia no cambia porque seguimos dependiendo de terceros. \\ \hline
+
+\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
+
+\begin{table}[H]
+\centering
+
+\begin{tabularx}{\linewidth}{@{}|l|c|X|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Riesgo 4: Rotura del prototipo}}  \\ \hline
+Severidad  & 5 & Se baja la severidad armando al menos dos prototipos (redundancia del 100\%).  \\ \hline
+Ocurrencia & 3 & Se puede bajar la ocurrencia maximizando los cuidados en la manipulación y los ensayos. Minimizar la precariedad.
+ \\ \hline
+
+\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
 
 \section{13. Gestión de la calidad}
 \label{sec:calidad}
 
-\begin{consigna}{red}
-Para cada uno de los requerimientos del proyecto indique:
-\begin{itemize} 
-\item Req \#1: Copiar acá el requerimiento.
+\begin{enumerate}
+	\item \textbf{Requerimientos generales del proyecto}
+	\begin{enumerate}[label*=\arabic*.]
+		\item Fecha de entrega del proyecto terminado: 5 de Julio de 2021.
+		
+		\textbf{-Verificación:} Se verifica acorde al diagrama de Gantt.
+		
+		\textbf{-Validación:} Es tarea del cliente y del director del proyecto hacer el seguimiento.
+		
+		\item El responsable asegura al cliente el know-how del proyecto.
+		
+		\textbf{-Verificación:} Se irán entregando los avances del proyecto al cliente
+		
+		\textbf{-Validación:} El cliente dará conformidad a la documentación entregada
+		
+		\item Podrá alimentarse con línea de red monofásica o trifásica.
+		
+		\textbf{-Verificación:} Se verificará que el prototipo tenga conexión para los tipos de alimentación.
+		
+		\textbf{-Validación:} Se hará en las pruebas de campo. El prototipo debe responder indistintamente con ambos tipos de alimentación.
+		
+		\item Deberá contemplar protecciones de alimentación a través de llaves térmicas.
+		
+		\textbf{-Verificación:} Se realiza cálculo de consumo a plena carga.
+		
+		\textbf{-Validación:} Se realiza prueba de corto circuito con Variac y amperímetro.
+		
+	\end{enumerate}
 
-Verificación y validación:
+	\item \textbf{Requerimientos funcionales}
+	\begin{enumerate}[label*=\arabic*.]
+		\item \textbf{Requerimientos de Hardware}
+			\begin{enumerate}[label*=\arabic*.]
+				\item El dispositivo debe contemplar un diseño modular.
+				
+				\textbf{-Verificación:} Se verifica que el diseño se adapte para conectar múltiples fuente de carga.
+		
+				\textbf{-Validación:}  Se hace funcionar el cargador con una, dos y hasta tres fuentes de carga.
+		
+				\item El diseño modular debe permitir su re configuración.
+				
+				
+				\textbf{-Verificación:} Ídem 2.1.1.
+		
+				\textbf{-Validación:} Las pruebas de campo se harán conectando una, dos o tres fuentes de carga y comprobando el funcionamiento en los tres casos.
+		
+				\item Debe tener un teclado accesible para su configuración y manejo.
+				
+				\textbf{-Verificación:} Se puede verificar simulando el código o directamente en la placa de control presionando todas las teclas y verificando si responden.
+		
+				\textbf{-Validación:} Se comprueba en el prototipo que las teclas ejecutan las acciones  para las que fueron encomendadas.
+				
+				\item Debe poseer un display que permita visualizar la configuración y parámetros mensurables.
+				
+				\textbf{-Verificación:} Se verifica el encuadre, brillo y contraste.
+		
+				\textbf{-Validación:} Se comprueba el funcionamiento sincronizado con el teclado y que los valores mensurables sean los correctos (alineación, decimales, unidades, decenas y centenas).
+				
+				\item Debe poseer indicadores luminosos bien visibles.
+				
+				\textbf{-Verificación:} Se verifica que enciendan y apaguen.
+		
+				\textbf{-Validación:} Se comprueba que se correspondan a las funciones asociadas.
+									
+				\item Cada fuente debe tener su propio sensor de corriente.
+				
+				\textbf{-Verificación:} Se verifica que respondan a los estímulos y su correcta polaridad.
+		
+				\textbf{-Validación:} Se comprueba su precision y exactitud según hoja de datos. 
+				
+				\item El sensor de tensión es común a todas las fuentes.
+				
+				\textbf{-Verificación:} Se verifica que responda a los estímulos y su correcta polaridad .
+		
+				\textbf{-Validación:} Se comprueba su precision y exactitud.
+				
+				\item Se agrega un botón de parada de emergencia.
+				
+				\textbf{-Verificación:} Se simula su accionamiento y que responda deteniendo el proceso de carga.
+		
+				\textbf{-Validación:} Se mide que el tiempo de respuesta sea el correcto.
+							
+			\end{enumerate}
+		\item \textbf{Requerimientos de Firmware}
+			\begin{enumerate}[label*=\arabic*.]
+				\item Debe permitir configurar la tensión y corriente máxima de carga.
+				
+				\textbf{-Verificación:} Se simula una configuración de batería y se  verifica que tengan un límite máximo.
+		
+				\textbf{-Validación:} Se comprueba que los límites máximos sean los que correspondan a cada etapa de carga.
+				
+				\item Debe permitir configurar los tiempos máximos para cada etapa de carga.
+							
+				\textbf{-Verificación:} Se verifica que los procesos de carga finalicen por tiempo, haciendo simulaciones con tiempos de carga mas cortos a los reales.
+		
+				\textbf{-Validación:} Se mide los tiempos de los distintos pasos de carga y se comprueba que sean los correctos.
+				
+				\item Debe guardar al menos dos configuraciones.
+				
+				
+				\textbf{-Verificación:} Se realiza pudiendo cargar los parámetros de dos tipos de baterías distintas.
+		
+				\textbf{-Validación:} Se controla que cada configuración de batería modifique los parámetros de carga máximos. 
+				
+				\item Tendrá que medir tensión, corriente y temperatura.
+				
+				
+				\textbf{-Verificación:} Se simulan los datos de los sensores y se visualizan en la pantalla.
+		
+				\textbf{-Validación:} Se comprueba con un multímetro auxiliar los valores medidos.
+				
+				\item Tendrá que garantizar cuatro etapas de carga:
+					\begin{enumerate}[label*=\arabic*.]
+						\item Carga a Fondo.				
+						
+						\textbf{-Verificación:} Se simula la conexión de una batería y que el detector de comienzo a la carga a fondo . 
+		
+						\textbf{-Validación:} Se comprueba que la carga se haga a corriente constante y sea la corriente máxima.
+				
+						\item Carga por Absorción.	
+						
+						\textbf{-Verificación:} Se realizan simulaciones con tiempos cortos de ejecución verificando el paso de carga a fondo a carga por absorción. 
+		
+						\textbf{-Validación:} Se comprueba la transición y que la carga se haga a tensión máxima constante.
+				
+						\item Carga a Flote.
+						
+						\textbf{-Verificación:} Se realizan simulaciones con tiempos cortos de ejecución verificando el paso de carga por absorción a flote. 
+		
+						\textbf{-Validación:} Se comprueba la transición y que la tensión no supere el 10\% de la tensión nominal ni el 10\% de la corriente máxima.
+						
+						\item Ecualización.
+						
+						\textbf{-Verificación:} Se realizan simulaciones con tiempos cortos de ejecución, verificando el cambio del paso de carga por absorción a ecualización.  
+		
+						\textbf{-Validación:} Se comprueba la transición y que la tensión no supere el 10\% de la tensión máxima y que la corriente se se limite al 10\% de la corriente máxima.
+				
+					\end{enumerate}
+				\item Tendrá un algoritmo que atienda al botón de parada de emergencia.
+				
+				\textbf{-Verificación:} Se simula el accionamiento del botón y como responde el programa.
+		
+				\textbf{-Validación:} Con el prototipo funcionando, se presiona el botón de parada de emergencia, y se comprueba la detención automática la carga y el tiempo que demora. 
+				
+				\item El control de carga se realizará por un algoritmo PID.
+				
+				\textbf{-Verificación:} Se determinan las constantes Kp, Ki y Kd y se verifica su comportamiento.
+		
+				\textbf{-Validación:} Una vez sintonizadas las constantes del PID se comprueba la estabilidad del sistema.
+				
+				\item Se registrará la fecha y hora de inicio y finalización de cada carga a través de un RTC.
+				
+				\textbf{-Verificación:} Se realizan simulaciones con tiempos cortos de ejecución de una carga y se verifica que se registren la fecha y hora. 
+		
+				\textbf{-Validación:} Se comprueba luego de una carga completa que al finalizar se registren la fecha y hora.
+				
+				\item Debe guardar las últimas mil cargas realizadas.
+				
+				\textbf{-Verificación:} Se simula la carga de 1000 registros en la EEPROM.
+		
+				\textbf{-Validación:} Se comprueba la integridad de los 1000 registros grabados.
+				
+				\item Con los datos recavados se podrá determinar anomalías y generar alarmas.
+				
+				\textbf{-Verificación:} Se simula un caso particular guardando datos en EEPROM que fuercen el disparo de alarmas.
+		
+				\textbf{-Validación:} Resulta complicado hacer la validación, por los tiempos que llevaría la comprobación, por lo que que se aceptará si cumple la verificación.
+				 
+				\item El registro de datos almacenados debe estar disponible para ser consultado remotamente.
+				
+				\textbf{-Verificación:} Se simula por UART la consulta del registro de datos.
+		
+				\textbf{-Validación:} Se comprueba enviando el comando de lectura y que el mismo sea recibido por el módulo WIFI. A su vez el módulo WIFI enviará los datos guardados en EEPROM.					
+				
+			\end{enumerate}					
+	\end{enumerate}
+	\item \textbf{Requerimientos no funcionales}
+	\begin{enumerate}[label*=\arabic*.]
+		\item Se deberá generar documentación:
+			\begin{enumerate}[label*=\arabic*.]
+				\item Esquemáticos eléctricos.
+				
+				\textbf{-Verificación:} Se verifica que lo documentado se corresponda con el prototipo final.
+		
+				\textbf{-Validación:} Será validado por el responsable del proyecto.
+				
+				\item Manual de instalación.
+				
+				\textbf{-Verificación:} Ídem 3.1.1.
+		
+				\textbf{-Validación:} Ídem 3.1.1.
+				
+				\item Manual de uso.
+				
+				\textbf{-Verificación:} Se verifica que lo documentado se cumpla en la práctica
+		
+				\textbf{-Validación:} Será validado por el cliente.
+				
+			\end{enumerate}
+		\item Se contará con la correspondiente certificación eléctrica otorgada por un laboratorio habilitado para la importación de las fuentes de carga.
+		
+		\textbf{-Verificación:} No aplica
+		
+		\textbf{-Validación:} No aplica
+				
+		\item El grado de protección del sistema debe ser como mínimo IP50.
+		
+		\textbf{-Verificación:} Se verifica de acuerdo a lo establecido en la norma 
+		
+		\textbf{-Validación:} Será validado por el cliente.
+				
+		\item Se debe garantizar un servicio de post venta por al menos 5 años.
+		
+		\textbf{-Verificación:} No aplica.
+		
+		\textbf{-Validación:} No aplica
+				
+	\end{enumerate}
+\end{enumerate}
 
-\begin{itemize}
-\item Verificación para confirmar si se cumplió con lo requerido antes de mostrar el sistema al cliente:\\
-Detallar 
-\item Validación con el cliente para confirmar que está de acuerdo en que se cumplió con lo requerido:\\
-Detallar  
-\end{itemize}
-
-\end{itemize}
-
-Tener en cuenta que en este contexto se pueden mencionar simulaciones, cálculos, revisión de hojas de datos, consulta con expertos, etc.
-
-\end{consigna}
 
 \section{14. Comunicación del proyecto}
 \label{sec:comunicaciones}
 
-\begin{consigna}{red}
 El plan de comunicación del proyecto es el siguiente:
-\end{consigna}
 
 % Please add the following required packages to your document preamble:
 % \usepackage{graphicx}
@@ -875,18 +1188,44 @@ El plan de comunicación del proyecto es el siguiente:
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 \begin{table}[htpb]
 \centering
-\resizebox{\textwidth}{!}{%
+\resizebox{\linewidth}{!}{%
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
 \rowcolor[HTML]{C0C0C0} 
 \multicolumn{6}{|c|}{\cellcolor[HTML]{C0C0C0}PLAN DE COMUNICACIÓN DEL PROYECTO}           \\ \hline
 \rowcolor[HTML]{C0C0C0} 
-¿Qué comunicar? & Audiencia & Propósito & Frecuencia & Método de comunicac. & Responsable \\ \hline
-                &           &           &            &                      &             \\ \hline
-                &           &           &            &                      &             \\ \hline
-                &           &           &            &                      &             \\ \hline
-                &           &           &            &                      &             \\ \hline
-                &           &           &            &                      &             \\ \hline
+¿Qué comunicar? & Audiencia & Propósito & Frecuencia & Comunicación & Responsable \\ \hline
+
+Plan de trabajo & 
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Cliente\\ Director\\ Clase GdP\end{tabular}} & 
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Dar a conocer el proyecto\\ y como se realizará\end{tabular}} &  
+Una vez  & 
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Por escrito y/o \\ videoconferencia\end{tabular}} & 
+\authorname  \\ \hline
+
+Informe de avance & 
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Cliente\\ Director \end{tabular}} & 
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Informar si las tareas\\ se cumplen en los\\plazos establecidos \end{tabular}} &  
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}quincenal-\\ mente\end{tabular}}  & 
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}e-mail y/o \\ videoconferencia \end{tabular}} & 
+\authorname  \\ \hline
+ 
+
+Desviaciones & 
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}} Director \end{tabular}} & 
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Buscar posibles soluciones\\ y re programar tareas\\si fuera necesario \end{tabular}} &  
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Cuando\\ ocurra\end{tabular}}  & 
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}e-mail y/o \\ videoconferencia \end{tabular}} & 
+\authorname  \\ \hline 
+ 
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Presentación del\\ proyecto final\end{tabular}} & 
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}} Cliente\\Director\\Jurado\end{tabular}} & 
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Exponer el producto final,\\ detallando su diseño \\y construcción \end{tabular}} &  
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Una vez\end{tabular}}  & 
+\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}videoconferencia \end{tabular}} & 
+\authorname  \\ \hline 
+
+
 \end{tabular}%
 }
 \end{table}
@@ -894,55 +1233,211 @@ El plan de comunicación del proyecto es el siguiente:
 \section{15. Gestión de Compras}
 \label{sec:compras}
 
-\begin{consigna}{red}
-En caso de tener que comprar elementos o contratar servicios:
-a) Explique con qué criterios elegiría a un proveedor.
-b) Redacte el Statement of Work correspondiente.
-\end{consigna}
+El presente proyecto no presenta gran complejidad en la adquisición de sus insumos. Los componentes electrónico se consiguen en parte en el mercado local (Elemon, Cika o Semak) y parte en el extranjero (DigiKey, Mean Well). Además el cliente asegura poseer en stock todos los elementos necesarios para la construcción del prototipo.
+El único elemento pendiente de compra, a la hora de la creación de este plan de trabajo, es el PCB, que queda supeditado al diseño del mismo.
+
 
 \section{16. Seguimiento y control}
 \label{sec:seguimiento}
 
-\begin{consigna}{red}
-Para cada tarea del proyecto establecer la frecuencia y los indicadores con los se seguirá su avance y quién será el responsable de hacer dicho seguimiento y a quién debe comunicarse la situación (en concordancia con el Plan de Comunicación del proyecto).
 
-El indicador de avance tiene que ser algo medible, mejor incluso si se puede medir en \% de avance. Por ejemplo,se pueden indicar en esta columna cosas como ``cantidad de conexiones ruteadeas'' o ``cantidad de funciones implementadas'', pero no algo genérico y ambiguo como ``\%'', porque el lector no sabe porcentaje de qué cosa.
-
-\end{consigna}
-
-\begin{table}[!htpb]
-\centering
-\begin{tabularx}{\linewidth}{@{}|X|X|X|X|X|X|@{}}
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|l|c|c|c|c|c|}
 \hline
 \rowcolor[HTML]{C0C0C0} 
-\multicolumn{6}{|c|}{\cellcolor[HTML]{C0C0C0}SEGUIMIENTO DE AVANCE}                                                                       \\ \hline
+\multicolumn{7}{|c|}{\cellcolor[HTML]{C0C0C0}\textbf{SEGUIMIENTO DEL AVANCE}}                                                                                                                                                                                                                                                                                                                                             \\ \hline
 \rowcolor[HTML]{C0C0C0} 
-Tarea del WBS & Indicador de avance & Frecuencia de reporte & Resp. de seguimiento & Persona a ser informada & Método de comunic. \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
-\end{tabularx}%
-%}
+WBS  & Nombre de la tarea    & \begin{tabular}[c]{@{}c@{}}Indicador\\ de avance\end{tabular}   & \begin{tabular}[c]{@{}c@{}}Frecuencia\\ de reporte\end{tabular} & \begin{tabular}[c]{@{}c@{}}Responsable del\\ seguimiento\end{tabular} & \begin{tabular}[c]{@{}c@{}}Persona a ser\\ informada\end{tabular} & Comunicación                                                \\ \hline
+
+1.1. &
+\begin{tabular}[l]{@{}l@{}}Definición de los\\  requerimientos\end{tabular} &
+\begin{tabular}[c]{@{}c@{}}\% de \\ definiciones\end{tabular} & 
+Al finalizar                                                    &                                                                      
+\authorname														&                                                                  
+\clientename 													& 
+\begin{tabular}[c]{@{}c@{}}Reunion \\ personal\end{tabular} \\ \hline
+
+1.2. &
+\begin{tabular}[l]{@{}l@{}}Confección del plan\\ de trabajo\end{tabular}           &
+\begin{tabular}[c]{@{}c@{}}\% de Ítems\end{tabular}           & 
+Al finalizar                                                    &                                                                      
+\authorname														&                                                                  
+\clientename														& 
+e-mail                                                      \\ \hline
+
+2.1. &
+\begin{tabular}[l]{@{}l@{}}Información sobre\\ la competencia\end{tabular} &
+\begin{tabular}[c]{@{}c@{}}\% del informe\end{tabular}           & 
+Al finalizar                                                    &                                                                      
+\clientename														&                                                                  
+\authorname														& 
+\begin{tabular}[c]{@{}c@{}}Reunion \\ personal\end{tabular} \\ \hline
+
+2.2. &
+\begin{tabular}[l]{@{}l@{}}Análisis Técnico-\\ Económico\end{tabular}           &
+\begin{tabular}[c]{@{}c@{}}\% del informe\end{tabular}           & 
+Al finalizar                                                    &                                                                      
+\authorname														&                                                                  
+\clientename														& 
+\begin{tabular}[c]{@{}c@{}}Reunion \\ personal\end{tabular} \\ \hline
+
+2.3. &
+\begin{tabular}[l]{@{}l@{}}Análisis sobre\\ el microprocesador\end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% del análisis\end{tabular}           & 
+Semanal                                                    &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+2.4. &
+\begin{tabular}[l]{@{}l@{}}Investigación sobre\\ los periféricos\end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% de la \\investigación\end{tabular}           & 
+quincenal                                                    &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+
+2.5. &
+\begin{tabular}[l]{@{}l@{}}Estudio de los data\\sheet de periféricos\end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% del estudio\end{tabular}           & 
+quincenal                                                    &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+3.1. &
+\begin{tabular}[l]{@{}l@{}}Diseño del diagrama\\ esquemático\end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% del diseño\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+3.2. &
+\begin{tabular}[l]{@{}l@{}}Diseño del diagrama\\ de conexión\end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% del diseño\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline 
+
+3.3. &
+\begin{tabular}[l]{@{}l@{}}Diseño de \\los PCB's\end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% del diseño\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+3.4. &
+\begin{tabular}[l]{@{}l@{}}Armado de \\los PCB's\end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% de armado\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+3.5. &
+\begin{tabular}[l]{@{}l@{}}Ensamblado del\\prototipo inicial\end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% de ensamblaje\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+4.1. &
+\begin{tabular}[l]{@{}l@{}}Definición de \\funciones\end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}Cantidad de \\funciones\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+4.2. &
+\begin{tabular}[l]{@{}l@{}}Modularización \\del código\end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% de módulos\\terminados\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+5.1. &
+\begin{tabular}[l]{@{}l@{}}Integración del \\sistema\end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% de \\integración\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+5.2. &
+\begin{tabular}[l]{@{}l@{}}Pruebas de \\campo\end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}Cantidad de \\pruebas\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\begin{tabular}[c]{@{}c@{}}\supname  \\ \clientename\end{tabular}		& 
+e-mail 													\\ \hline
+
+5.3. &
+\begin{tabular}[l]{@{}l@{}}Corrección de \\los PCB's \end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% de \\realización\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+5.4. &
+\begin{tabular}[l]{@{}l@{}}Búsqueda de bugs \end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% de \\realización\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+5.5. &
+\begin{tabular}[l]{@{}l@{}}Ensamblado final \\del prototipo \end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% de \\ensamblaje\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+5.3. &
+\begin{tabular}[l]{@{}l@{}}Corrección de \\los PCB's \end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% de \\realizaci\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\supname														& 
+e-mail 													\\ \hline
+
+6. &
+\begin{tabular}[l]{@{}l@{}}Proceso de \\cierre \end{tabular}   &
+\begin{tabular}[c]{@{}c@{}}\% de \\elaboración\end{tabular}           & 
+quincenal                                                   &                                                                      
+\authorname														&                                                                  
+\begin{tabular}[c]{@{}c@{}}\supname  \\ \clientename\\ Jurado\end{tabular}     & 
+e-mail 													\\ \hline
+
+\end{tabular}%
+}
 \end{table}
 
 \section{17. Procesos de cierre}    
 \label{sec:cierre}
 
-\begin{consigna}{red}
-Establecer las pautas de trabajo para realizar una reunión final de evaluación del proyecto, tal que contemple las siguientes actividades:
+
+Se establecerá una reunión con los distintos actores involucrados e interesados en el proyecto donde se contemple las siguientes actividades:
 
 \begin{itemize}
-\item Pautas de trabajo que se seguirán para analizar si se respetó el Plan de Proyecto original:
- - Indicar quién se ocupará de hacer esto y cuál será el procedimiento a aplicar. 
-\item Identificación de las técnicas y procedimientos útiles e inútiles que se utilizaron, y los problemas que surgieron y cómo se solucionaron:
- - Indicar quién se ocupará de hacer esto y cuál será el procedimiento para dejar registro.
-\item Indicar quién organizará el acto de agradecimiento a todos los interesados, y en especial al equipo de trabajo y colaboradores:
-  - Indicar esto y quién financiará los gastos correspondientes.
+\item El responsable del proyecto, \authorname, analizará junto al director, \supname, el cumplimiento del WBS, los cambios realizados y los tiempos en el que se llevaron a cabo. Se revisarán las técnicas de diseño aplicadas en el proyecto, y se comentarán cuales tuvieron éxito y cuáles no. A su vez se repasarán los problemas enfrentados y como se solucionaron.
+
+\item El responsable del proyecto, \authorname, comunicará al cliente, \clientename, la finalización del proyecto y hará entrega de toda la documentación correspondiente del producto para su producción. También entregará un informe técnico-económico del producto.
+
+\item El responsable del proyecto, \authorname, elaborará un documento con la memoria y una presentación del producto para su defensa pública ante un jurado evaluador. En ella también se agradecerá al director por haber dirigido y controlado todo el trabajo, al cliente por la confianza dispensada y por el aporte financiero y en especial al equipo y colaboradores por su compromiso de trabajo para con el proyecto. 
+
 \end{itemize}
 
-\end{consigna}
 
 
 \end{document}
