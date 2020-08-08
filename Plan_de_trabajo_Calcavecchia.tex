@@ -73,6 +73,8 @@ Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios 
 
 1.3      & Se avanza hasta el punto 17						 & 7/08/2020 \\ \hline
 
+1.4      & Se agregaron historias de usuarios				 & 8/08/2020 \\ \hline
+
 %		   Con texto partido \newline
 %		   En varias líneas \newline
 %		   A propósito                                                                     
@@ -301,12 +303,86 @@ Los requerimientos del presente proyecto se establecieron luego de acordar con e
 	\end{enumerate}
 \end{enumerate}
 
+\newpage
+
 \section{Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
 
-\begin{consigna}{red}
-Descripción: En esta sección se deben incluir las historias de usuarios y su ponderación (\textit{history points}). Recordar que las historias de usuarios son descripciones cortas y simples de una característica contada desde la perspectiva de la persona que desea la nueva capacidad, generalmente un usuario o cliente del sistema. La ponderación es un número entero que representa el tamaño de la historia comparada con otras historias de similar tipo.
-\end{consigna}
+Se dará una visión de las funcionalidades esperada por distintos usuarios del producto.
+A cada historia se le asocia un grado de ponderación de acuerdo a un criterio definido y una prioridad respecto al resto.
+
+Para la ponderación se usarán 3 niveles: 1, 3 y 7. \\
+Mientras que para la prioridad se usará de 1 a 5, siendo 1 la prioridad mas baja.
+ \\
+ 
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|c|l|c|l|l|}
+\hline
+\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Historia de uso 1:}} & \multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Como operario desearía una conexión rápida entre el cargador\\y la batería\end{tabular}}} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Criterio\\ adoptado\end{tabular}    & \multicolumn{5}{l|}{\begin{tabular}[c]{@{}l@{}}Complejidad: baja, si se utilizan conectores rápidos\\ entre el cargador y la batería\end{tabular}}                  \\ \hline
+Ponderación                                                    & 1   & \multicolumn{4}{l|}{Es de fácil aplicación}                                                                                                                   \\ \hline
+Prioridad                                                      & 2   & \multicolumn{4}{l|}{Hace a la prestación del producto pero no es determinante}                                                                                                        \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\vspace{3mm}
+
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|c|l|c|l|l|}
+\hline
+\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Historia de uso 2:}} & \multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Como personal de mantenimiento desearía que el equipo sea más\\ liviano y pequeño que el tradicional cargador a transformador\end{tabular}}} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Criterio\\ adoptado\end{tabular}    & \multicolumn{5}{l|}{\begin{tabular}[c]{@{}l@{}}Incertidumbre: media, por tratarse de un criterio subjetivo \end{tabular}}                  \\ \hline
+Ponderación                                                    & 3   & \multicolumn{4}{l|}{Por ser un valor subjetivo es difícil ponderar}                                                                                                                   \\ \hline
+Prioridad                                                      & 1   & \multicolumn{4}{l|}{De por si es inherente al diseño ya que se usan fuentes conmutadas}                                                                                                        \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\vspace{3mm}
+
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|c|l|c|l|l|}
+\hline
+\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Historia de uso 3:}} & \multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Como administrador desearía hacer un seguimiento del historial de\\cargas de la batería\end{tabular}}} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Criterio\\ adoptado\end{tabular}    & \multicolumn{5}{l|}{\begin{tabular}[c]{@{}l@{}}Conocimiento: alto, es un criterio innovador del proyecto \end{tabular}}                  \\ \hline
+Ponderación                                                    & 7   & \multicolumn{4}{l|}{Es un factor preponderante en la funcionalidad del sistema }                                                                                                                   \\ \hline
+Prioridad                                                      & 5   & \multicolumn{4}{l|}{Es lo que diferenciará este producto del resto de la competencia}                                                                                                        \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\vspace{3mm}
+
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|c|l|c|l|l|}
+\hline
+\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Historia de uso 4:}} & \multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Como ingeniero de desarrollo desearía tener acceso al historial de\\ carga para mejorar los diagnósticos de fallas\end{tabular}}} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Criterio\\ adoptado\end{tabular}    & \multicolumn{5}{l|}{\begin{tabular}[c]{@{}l@{}}Volumen: es un trabajo para subdividirlo en varias etapas\\utilizando estadística para llevarlo a cabo \end{tabular}}                  \\ \hline
+Ponderación                                                    & 3   & \multicolumn{4}{l|}{Hace a la sostenibilidad del producto }                                                                                                                   \\ \hline
+Prioridad                                                      & 3   & \multicolumn{4}{l|}{De la investigación pueden surgir nuevas funcionalidades y/o productos}                                                                                                        \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\vspace{3mm}
+
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|c|l|c|l|l|}
+\hline
+\multicolumn{3}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Historia de uso 5:}} & \multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Como técnico desearía un cargador configurable que se adapte a\\ cualquier tipo de batería \end{tabular}}} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Criterio\\ adoptado\end{tabular}    & \multicolumn{5}{l|}{\begin{tabular}[c]{@{}l@{}}Complejidad: media, se puede alcanzar agregando código adicional \end{tabular}}                  \\ \hline
+Ponderación                                                    & 7   & \multicolumn{4}{l|}{Hace del cargador un producto flexible y adaptable.}                                                                                                                   \\ \hline
+Prioridad                                                      & 4   & \multicolumn{4}{l|}{Es otro de los factores que le da valor agregado al producto}                                                                                                        \\ \hline
+\end{tabular}%
+}
+\end{table}
+
 
 \section{5. Entregables principales del proyecto}
 \label{sec:entregables}
@@ -387,7 +463,7 @@ Descripción: En esta sección se deben incluir las historias de usuarios y su p
 
 \textbf{Cantidad total de horas: (670 hs)}
 
-
+\vspace{10mm}
 \section{7. Diagrama de Activity On Node}
 \label{sec:AoN}
 
